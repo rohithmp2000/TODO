@@ -35,6 +35,7 @@
   <!-- --------------- -->
   {% block content %}
   {% for item in data %}  
+  <form>
   <div class="card" style="width: 18rem;">
     <div class="card-body">
       <h5 class="card-title">{{ item }}</h5>
@@ -42,6 +43,7 @@
       <a href="delete/{{ item.id }}" class="card-link text-danger">Delete</a>
     </div>
   </div>
+  </form>
   {% endfor %}
   {% endblock %}
 </body>
